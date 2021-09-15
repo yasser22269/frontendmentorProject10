@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body {
+    --Light-red-W : hsl(15, 100%, 70%); /* (work)*/
+    --Soft-blue : hsl(195, 74%, 62%);/* (play)*/
+    --Light-red-S : hsl(348, 100%, 68%);/* (study)*/
+    --Lime-green : hsl(145, 58%, 55%);/* (exercise)*/
+    --Violet : hsl(264, 64%, 52%);/*(social)*/
+    --Soft-orange: hsl(43, 84%, 65%);/*  (self care)*/
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+
+    background-color: #000; 
+    font-family: 'Rubik', sans-serif;
+    --FontSize: 18px;
+    font-size: var(--FontSize);
+}
+.center-text {
+    text-align: center;
+}
+
+
+.card{
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #fff;
+    /* padding: 32px 29px; */
+    width: 222px;
+    height: 205px;
+    margin-bottom: 20px;
+    border: none;
+    overflow: inherit;
+}
+.card.c{
+    position: relative;
+    grid-area: c;
+    /* height: auto; */
+    height: 100%;
+}
+.text {
+    height: 65%;
+    border-radius: 12px;
+    background-color: #5746EA;
+    z-index: 999;
+}
+.card.c .info-card {
+    flex-direction: column;
+    height: 30%;
+    padding-top: 39px;
+    display: flex;
+    bottom: 18px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+.card.c  img {
+    position: initial;
+    right: auto;
+    width: 75px;
+    margin: 35px 10px 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.card.c p{
+    color: var( --Pale-Blue);
+    font-size: 13px;
+    margin-left: 20px ;
+}
+.card.c h4{
+    margin: 0 0 0 20px ;
+    font-size: 35px;
+    font-weight: 300;
+}
+.card.c  .info-card a{
+    margin-bottom: 16px;
+    color: var( --Pale-Blue);
+    font-size: 14px;
+    font-weight: 500;
+}
+.card  .info-card i:hover,
+.card.c  .info-card a.active,
+.card.c  .info-card a:hover{
+    color: #fff;
+}
+.card.c1{
+    background-color: var(--Light-red-W);
+    position: relative;
+    grid-area: c1;
+}
+
+.card.c2{
+    background-color: var(--Soft-blue);
+    grid-area: c2;
+}
+
+.card.c3{
+    grid-area: c3;
+    background-color: var( --Light-red-S);
+}
+.card.c4{
+    grid-area: c4;
+    background-color: var(--Lime-green);
+}
+.card.c5{
+    grid-area: c5;
+    background-color: var( --Violet);
+}
+.card.c6{
+    grid-area: c6;
+    background-color: var( --Soft-orange);
+}
+
+ /* .card .card-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} */
+.card img {
+    position: absolute;
+    right: 10px;
+    width: 75px;
+}
+.card  .info-card {
+    background: var(--Dark-blue);
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    display: flex;
+    border-radius: 16px;
+    padding: 20px 23px;
+    bottom: -4px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.card  .info-card:hover{
+    background-color: var(  --Very-dark-blue);
+}
+
+
+ .card .info-card  h5{
+    font-size: var(--FontSize);
+    font-weight: 400;
+}
+ .card .info-card  p{
+    font-size: 53px;
+    margin-top: 23px;
+    font-weight: 300;
+}
+ .card .info-card span{
+    margin-top: 13px;
+    color: var( --Pale-Blue);
+    font-size: 13px;
+}
+.card  .info-card i{
+    position: absolute;
+    right: 29px;
+    color: var( --Pale-Blue);
+    font-size: 16px;
+}
+
+
+
+.cards-left {
+    margin-top: 52px;
+}
+
+
+
+
+@media (max-width: 1099px) {
+    main {
+        padding: 23px;
+    }
+    .card {
+        margin-bottom: 20px;
+        margin: 0 auto 21px !important;
+        width: 80%;
+    }
+    .card h5 {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .card.c .info-card {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+   
+}
+
+@media (min-width: 1100px){
+     
+    .grid-style {
+        column-gap: 11px;
+        row-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "c c1 c2 c3"
+            "c c4 c5 c6"; 
+            max-width: 1110px;
+            /* align-items: center; */
+        }   
+        main{
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+    .card{
+    /* max-height: 585px; */
+    }
+    .card.c5 p {
+        margin-top: 14px;
+    }
+}

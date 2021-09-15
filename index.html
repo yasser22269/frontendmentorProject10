@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/favicon-32x32.png" type="image/icon type">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylo data storage component challenge hub</title>
+
+     <!--Start font  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet">
+     <!--End font  -->
+
+     <!--Start font awesome -->
+     <link rel="stylesheet" href="css/all.min.css" />
+     <!--End font awesome -->
+
+     <!--Start style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+     <!-- End style -->
+
+
+</head>
+<body>
+    <main>
+    <div class="grid-style">
+        <div class="card c">
+            <div class="text">
+                <img src="images/image-jeremy.png" alt="">
+                <p>Report for</p>
+                  <h4>Jeremy Robson</h4>    
+            </div>
+                <div class="info-card">
+                   <a href="#" id="Daily" onclick="btnDaily1()">Daily</a>
+                   <a href="#" id="Weekly" onclick="btnWeekly1()">Weekly</a>
+                   <a href="#"  id="Monthly" class="active" onclick="btnMonthly1()">Monthly</a>
+                </div>
+                
+        </div> 
+
+        <div class="card c1">
+            <img src="images/icon-work.svg" alt="">
+                <div class="info-card d">
+                   <i class="fas fa-ellipsis-h"></i>
+                    <h5>Work</h5>
+                    <p>5hrs</p>
+                    <span>Previous - 7hrs </span>
+                </div>
+                <div class="info-card w">
+                    <i class="fas fa-ellipsis-h"></i>
+                     <h5>Work</h5>
+                     <p>32hrs</p>
+                     <span>Previous - 36hrs </span>
+                 </div>
+                 <div class="info-card m">
+                    <i class="fas fa-ellipsis-h"></i>
+                     <h5>Work</h5>
+                     <p>103hrs</p>
+                     <span>Previous - 128hrs </span>
+                 </div>
+        </div>
+     
+            <div class="card c2">
+                <img src="images/icon-play.svg" alt="">
+
+                    <div class="info-card d">
+                       <i class="fas fa-ellipsis-h"></i>
+                        <h5>Play</h5>
+                        <p>1hr</p>
+                        <span>  Previous - 2hrs </span>
+                    </div>
+                    <div class="info-card w">
+                        <i class="fas fa-ellipsis-h"></i>
+                         <h5>Play</h5>
+                         <p>10hrs</p>
+                         <span>  Previous - 8hrs </span>
+                     </div>
+                     <div class="info-card m">
+                        <i class="fas fa-ellipsis-h"></i>
+                         <h5>Play</h5>
+                         <p>23hrs</p>
+                         <span>  Previous - 29hrs </span>
+                     </div>
+            </div> 
+            <div class="card c3">
+                <img src="images/icon-study.svg" alt="">
+
+                <div class="info-card d">
+                    <i class="fas fa-ellipsis-h"></i>
+                     <h5>Study</h5>
+                     <p>0hrs</p>
+                     <span>  Previous - 1hr </span>
+                 </div>
+                 <div class="info-card w">
+                     <i class="fas fa-ellipsis-h"></i>
+                      <h5>Study</h5>
+                      <p>4hrs</p>
+                      <span>  Previous - 7hrs </span>
+                  </div>
+                  <div class="info-card m">
+                     <i class="fas fa-ellipsis-h"></i>
+                      <h5>Study</h5>
+                      <p>13hrs</p>
+                      <span>  Previous - 19hrs </span>
+                  </div>
+            </div> 
+                <div class="card c4">
+                    <img src="images/icon-exercise.svg" alt="">
+                    <div class="info-card d">
+                        <i class="fas fa-ellipsis-h"></i>
+                         <h5>Exercise</h5>
+                         <p>1hr</p>
+                         <span>  Previous - 1hr </span>
+                     </div>
+                     <div class="info-card w">
+                         <i class="fas fa-ellipsis-h"></i>
+                          <h5>Exercise</h5>
+                          <p>4hrs</p>
+                          <span>  Previous - 5hrs </span>
+                      </div>
+                      <div class="info-card m">
+                         <i class="fas fa-ellipsis-h"></i>
+                          <h5>Exercise</h5>
+                          <p>11hrs</p>
+                          <span>  Previous - 18hrs </span>
+                      </div>
+                </div> 
+        <div class="card c5">
+            <img src="images/icon-social.svg" alt="">
+            <div class="info-card d">
+                <i class="fas fa-ellipsis-h"></i>
+                 <h5>Social</h5>
+                 <p>1hr</p>
+                 <span>  Previous - 3hrs </span>
+             </div>
+             <div class="info-card w">
+                 <i class="fas fa-ellipsis-h"></i>
+                  <h5>Social</h5>
+                  <p>5hrs</p>
+                  <span>  Previous - 10hrs </span>
+              </div>
+              <div class="info-card m">
+                 <i class="fas fa-ellipsis-h"></i>
+                  <h5>Social</h5>
+                  <p>21hrs</p>
+                  <span>  Previous - 23hrs </span>
+              </div>
+        </div>
+        <div class="card c6">
+            <img src="images/icon-self-care.svg" alt="">
+            <div class="info-card d">
+                <i class="fas fa-ellipsis-h"></i>
+                 <h5>Self Care</h5>
+                 <p>0hrs</p>
+                 <span>  Previous - 1hr </span>
+             </div>
+             <div class="info-card w">
+                 <i class="fas fa-ellipsis-h"></i>
+                  <h5>Self Care</h5>
+                  <p>2hrs</p>
+                  <span>  Previous - 2hrs </span>
+              </div>
+              <div class="info-card m">
+                 <i class="fas fa-ellipsis-h"></i>
+                  <h5>Self Care</h5>
+                  <p>7hrs</p>
+                  <span>  Previous - 11hrs </span>
+              </div>
+        </div>
+        
+    </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
