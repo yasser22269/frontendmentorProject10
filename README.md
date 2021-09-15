@@ -1,7 +1,7 @@
 # frontendmentorProject10
 Time tracking dashboard challenge hub
 
-ui design: https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/j1ocp59n25odoftocgpi.jpg
+ui design: https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw
 
 <br><br>
 
