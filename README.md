@@ -1,10 +1,12 @@
 # frontendmentorProject10
-Time tracking dashboard challenge hub
 
-ui design: https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw
-
+Project site: https://yasser22269.github.io/authentication-Form-front-end/
 <br><br>
-
-Project site: https://yasser22269.github.io/frontendmentorProject10/
+Login
+<img src="../master/design/login.png" alt="">   
 <br><br>
-<img src="../master/design/desktop-preview.jpg" alt="">   
+register
+<img src="../master/design/register.png" alt="">   
+<br><br>
+mobile
+<img src="../master/design/mobile.png" alt="">   
